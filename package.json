@@ -2,7 +2,7 @@
     "name": "ascoos-update-build",
     "displayName": "Ascoos Update Build Extension",
     "description": "Automatically updates build number and date on save",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "alexsoft-software",
     "icon": "images/ascoos.png",
     "license": "AGL-F (Ascoos General License - Free)",        
@@ -18,6 +18,17 @@
             {
                 "command": "updateBuild",
                 "title": "Ascoos Update Build"
+            },
+            {
+                "command": "toggleAutoUpdate",
+                "title": "Toggle Auto Update"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "toggleAutoUpdate",
+                "key": "ctrl+shift+F9",
+                "when": "editorTextFocus"
             }
         ],
         "configuration": {
@@ -27,10 +38,21 @@
                     "type": "integer",
                     "default": 1,
                     "description": "The starting build number to use for new files."
+                },
+                "ascoosUpdateBuild.timeZoneOffset": {
+                    "type": "integer",
+                    "default": 0,
+                    "description": "The time zone offset to use for the updated date (e.g., 2 for UTC+2, -1 for UTC-1)."
+                },
+                "ascoosUpdateBuild.enableAutoUpdate": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Enable or disable automatic update on save."
                 }
             }
         }
     },
+
     "files": [
         "LICENSE.md",
         "README.md",

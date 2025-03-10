@@ -13,6 +13,7 @@ Automatically updates build number and date on save.
 - Creates a backup of the saved file in the `.repos` folder with the updated build number and date.
 - Allows setting an initial build number via configuration.
 - Automatically creates and updates `.vscode/settings.json` to exclude the `.versions` and `.repos` folders from the file explorer.
+- **Toggle auto update on save using the keybinding `Ctrl+Shift+F9`.**
 
 ## Installation
 
@@ -28,6 +29,7 @@ Automatically updates build number and date on save.
 - You can view the build history in the `builds.json` file located in the `.versions` folder.
 - Backups of the saved files are created in the `.repos` folder with the updated build number and date.
 - Set the initial build number via the configuration settings in the `settings.json` file located in the `.vscode` folder.
+- **Use the keybinding `Ctrl+Shift+F9` to toggle the auto update feature on or off.**
 
 ## Configuration
 

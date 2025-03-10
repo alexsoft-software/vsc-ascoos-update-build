@@ -13,3 +13,10 @@ All notable changes to this project will be documented in this file.
 - Allows setting an initial build number via configuration.
 - Automatically creates and updates `.vscode/settings.json` to exclude the `.versions` and `.repos` folders from the file explorer.
 - License: This project is licensed under the [AGL-F (ASCOOS General License - Free)](https://docs.ascoos.com/lics/ascoos/AGL-F.html).
+
+## [1.0.1] - 2025-03-11
+
+### Added
+
+- **Toggle auto update on save using the keybinding `Ctrl+Shift+F9`.**
+- Updated README.md to include instructions for toggling auto update feature.
