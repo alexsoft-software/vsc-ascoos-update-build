@@ -1,0 +1,44 @@
+{
+    "name": "ascoos-update-build",
+    "displayName": "Ascoos Update Build Extension",
+    "description": "Automatically updates build number and date on save",
+    "version": "1.0.0",
+    "publisher": "alexsoft-software",
+    "icon": "images/ascoos.png",
+    "license": "AGL-F (Ascoos General License - Free)",        
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "activationEvents": [
+        "onDidSaveTextDocument"
+    ],
+    "main": "./updateBuild.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "updateBuild",
+                "title": "Ascoos Update Build"
+            }
+        ],
+        "configuration": {
+            "type": "object",
+            "properties": {
+                "ascoosUpdateBuild.startingBuild": {
+                    "type": "integer",
+                    "default": 1,
+                    "description": "The starting build number to use for new files."
+                }
+            }
+        }
+    },
+    "files": [
+        "LICENSE.md",
+        "README.md",
+        "CHANGELOG.md"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/alexsoft-software/vsc-ascoos-update-build.git"
+    },
+    "homepage": "https://www.ascoos.com"    
+}
